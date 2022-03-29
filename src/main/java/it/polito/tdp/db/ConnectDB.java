@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectDB {
 	
 	public static Connection getConnection() {
-		String url = "jdbc:mysql://localhost/iscritticorsi?user=root&password=filippo";
+		String url = "jdbc:mysql://localhost:3306/iscritticorsi?user=root&password=filippo";
 		try {
 			return DriverManager.getConnection(url);
 		} catch (SQLException e) {
